@@ -15,9 +15,9 @@ button {
   font-size: smaller;
   max-width: 70px;
   text-align: center;
-  border: #007bff;;
+  border: #007bff;
   border-radius: 5px;
-  background-color: #007bff;;
+  background-color: #007bff;
 }
 
 .OpacityCard {
@@ -26,8 +26,9 @@ button {
   -webkit-backdrop-filter: blur(10px) !important;
   border-radius: 10px !important;
   border: 1px solid rgba(255, 255, 255, 0.582) !important;
-  margin-left: 20rem !important;
-  margin-right: 20rem !important;
+  min-width: 40rem !important;
+  margin-left: 15rem !important;
+  margin-right: 15rem !important;
   margin-top: 5rem !important;
 }
 
