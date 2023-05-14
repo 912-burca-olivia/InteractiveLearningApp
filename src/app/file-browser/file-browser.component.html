@@ -153,7 +153,7 @@
       </div>
     </div>
     <div class="col-10">
-      <div style="display: flex; padding-top: 1.5em">
+      <div style="display: flex; padding-top: 1.5em" class="row">
         <div
           *ngIf="files.length == 0"
           class="text-center jumbotron jumbotron-fluid"
@@ -165,6 +165,7 @@
         <div
           *ngFor="let file of files"
           class="card col-lg-2 col-md-3 col-sm-6 m-1 shadow"
+          style="min-height: 50px; min-width: 250px;"
         >
           <div
             *ngIf="validImgFile(file.name)"
