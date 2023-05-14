@@ -18,6 +18,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
   "
 >
   <div class="coffee">
@@ -25,11 +26,12 @@
     <div></div>
     <div></div>
   </div>
+  <div><h3 style="color: white">Loading...</h3></div>
 </div>
 <div *ngIf="!loading" class="card m-2 OpacityCard">
   <div class="card-header bg-transparent text-center">
     <span class="float-left" style="color: black"
-      >The Number of Folders <i class="fas fa-arrow-right"></i>
+      >The Number of Sub-Folders <i class="fas fa-arrow-right"></i>
       {{ dirs.length }} <i style="margin: 10px">&</i> The Number of Files
       <i class="fas fa-arrow-right"></i> {{ files.length }}</span
     >
@@ -85,7 +87,7 @@
     <div class="col-2">
       <div class="text-secondary ml-1">
         <strong
-          >List of Folders
+          >List of Sub-Folders
           <a
             href="#collapseAddFolder"
             data-toggle="collapse"
@@ -145,7 +147,7 @@
         </ng-container>
         <ng-container *ngIf="dirs.length == 0">
           <span class="list-group-item list-group-item-action">
-            No Folders Available!
+            No More Sub-Folders!
           </span>
         </ng-container>
       </div>
@@ -209,9 +211,7 @@
             </ng-template> -->
           </div>
           <div class="card-footer bg-transparent">
-            <div class="tag">
-              Research
-            </div>
+            <div class="tag">Research</div>
           </div>
           <div class="card-footer bg-transparent">
             <a
