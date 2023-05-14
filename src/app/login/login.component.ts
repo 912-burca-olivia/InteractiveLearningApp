@@ -37,11 +37,11 @@ export class LoginComponent implements OnInit {
     e.preventDefault();
     this.loading = true;
     this.loginError = false;
-    if (this.user.username == 'sample' && this.user.password == 'sample') {
+    if (this.user.username == 'AlexVadean' && this.user.password == 'Research') {
       this.loading = false;
       sessionStorage.setItem('loggedInUser', JSON.stringify({
-        fname: 'Demo',
-        lname: 'User'
+        fname: 'Alex',
+        lname: 'Vadean'
       }));
       this.router.navigate(['browser']);
     }
